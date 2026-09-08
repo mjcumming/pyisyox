@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyisyox"
+version = "1.0.0b0"
+description = "Async Python client for Universal Devices ISY/IoX (mjcumming mike2 branch)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE.txt" }
+dependencies = [
+  "aiohttp>=3.8.1",
+  "python-dateutil>=2.8.1",
+  "requests>=2.28.1",
+  "colorlog>=6.6.0",
+  "xmltodict>=0.12.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/mjcumming/pyisyox"
+Source = "https://github.com/mjcumming/pyisyox"
+
+[tool.setuptools.packages.find]
+include = ["pyisyox*"]
